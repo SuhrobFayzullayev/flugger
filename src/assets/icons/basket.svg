@@ -1,0 +1,13 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="solar:cart-4-linear" clip-path="url(#clip0_7229_3624)">
+<g id="Group">
+<path id="Vector" d="M2.85515 14.8121C1.9926 10.7406 1.56013 8.70421 2.64251 7.35271C3.7237 6 5.78395 6 9.90326 6H16.0972C20.2178 6 22.2756 6 23.358 7.35271C24.4392 8.70543 24.0079 10.7406 23.1454 14.8121L22.63 17.2406C22.045 20.0007 21.753 21.3801 20.762 22.1901C19.7709 23 18.3749 23 15.5831 23H10.4174C7.62557 23 6.22964 23 5.23976 22.1901C4.24747 21.3801 3.95435 20.0007 3.37051 17.2406L2.85515 14.8121Z" stroke="#122568" stroke-width="1.5"/>
+<path id="Vector_2" d="M2 10.4545H24M10.5556 14H15.4444M20.3333 8.09091L16.6667 1M5.66667 8.09091L9.33333 1" stroke="#122568" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_7229_3624">
+<rect width="24" height="24" fill="white" transform="translate(0.980469 0.0800781)"/>
+</clipPath>
+</defs>
+</svg>

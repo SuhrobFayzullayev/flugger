@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./src/styles/windi/windi.css" />
+  <link rel="stylesheet" href="./src/styles/sass/style.css" />
+  <title>Flugger | Home</title>
+</head>
+
+<body>
+  <div class="w-full mx-auto bg-clight flex min-h-screen flex-col">
+    <div class="header">
+      <div class="header-fixed fixed top-0 z-50 w-full mx-auto px-4 bg-cblue">
+        <div class="header-center <xl:py-4 max-w-screen-2xl mx-auto w-full flex justify-between items-center">
+          <div class="logo">
+            <a href="./index.html" class="logo-block w-[150px] <md:w-[120px] block">
+              <img src="./src/assets/icons/logo.svg" class="w-full h-auto object-cover" alt="" />
+            </a>
+          </div>
+
+          <div class="links <xl:hidden w-[70%] mx-10 flex justify-between text-white">
+            <div class="link-item">
+              <span class="py-[20px]">Где ты собираешься рисовать?</span>
+
+              <div class="dropdown cursor-default px-6 -ml-2">
+                <div class="w-full mx-auto max-w-screen-2xl my-14 flex">
+                  <div class="w-1/4 h-full border-r border-clightBlue pr-[30px]">
+                    <div class="category-item mb-5 w-full flex justify-between items-center cursor-pointer">
+                      <div class="link w-[calc(100%-50px)] overflow-hidden">
+                        <p class="text-[18px] active text-white w-fit text-left" style="line-height: 1.5;">
+                          Link
+                        </p>
+                      </div>
+
+                      <div class="icon w-[15px] h-[15px] flex justify-center items-end"
+                        style="transform: rotateZ(-90deg);">
+                        <img src="./src/assets/icons/arrowLight.svg" class="w-full h-full">
+                      </div>
+                    </div>
+
+                    <!-- one-child -->
+                    <a href="#" class="category-item mb-5 w-full" style="padding: 0;">
+                      <div class="w-full flex justify-between items-center">
+                        <div class="link w-[calc(100%-50px)] overflow-hidden">
+                          <p class="text-[18px] text-white w-fit text-left" style="line-height: 1.5;">
+                            Link
+                          </p>
+                        </div>
+
+                        <div class="icon w-[15px] h-[15px] flex justify-center items-end"
+                          style="transform: rotateZ(-90deg);">
+                          <img src="./src/assets/icons/arrowLight.svg" class="w-full h-full">
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="category-item mb-5 w-full" style="padding: 0;">
+                      <div class="w-full flex justify-between items-center">
+                        <div class="link w-[calc(100%-50px)] overflow-hidden">
+                          <p class="text-[18px] text-white w-fit text-left" style="line-height: 1.5;">
+                            Link
+                          </p>
+                        </div>
+
+                        <div class="icon w-[15px] h-[15px] flex justify-center items-end"
+                          style="transform: rotateZ(-90deg);">
+                          <img src="./src/assets/icons/arrowLight.svg" class="w-full h-full">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="link-item mx-3">
+              <a href="#">Цвета</a>
+            </div>
+            <div class="link-item mx-3">
+              <a href="#">Краска, шпаклевка и обои</a>
+            </div>
+            <div class="link-item mx-3">
+              <a href="#">Аксессуары</a>
+            </div>
+            <div class="link-item mx-3">
+              <a href="#">Вдохновение и руководства</a>
+            </div>
+            <div class="link-item">
+              <a href="#">Контакт</a>
+            </div>
+          </div>
+
+          <div class="icons flex justify-between items-center w-fit">
+            <div style="font-weight: 700"
+              class="icon <sm:hidden lang block w-fit h-[40px] <md:h-[30px] bg-white <md:rounded-[12px] <md:pt-3 rounded-[16px] flex justify-center items-center p-2.5 <md:text-[14px] text-[16px] text-cblue">
+              <span class="text-cgreen hover:text-cgreen transition-all duration-200 ease cursor-pointer">
+                RU
+              </span>
+              <span class="mx-1">/</span>
+              <span class="hover:text-cgreen transition-all duration-200 ease cursor-pointer">
+                UZ
+              </span>
+            </div>
+
+            <a href="#"
+              class="icon mx-2 cabinet block <md:w-[30px] <md:h-[30px] <md:rounded-[12px] w-[40px] h-[40px] bg-white rounded-[16px] flex justify-center items-center <md:p-1.5 p-2">
+              <img src="./src/assets/icons/user.svg" alt="" class="w-full h-full object-cover" />
+            </a>
+
+            <a href="#"
+              class="icon mr-2 search block w-[40px] h-[40px] bg-white rounded-[16px] <md:w-[30px] <md:h-[30px] <md:rounded-[12px] <md:p-2 flex justify-center items-center p-2.5">
+              <img src="./src/assets/icons/search.svg" alt="" class="w-full h-full object-cover" />
+            </a>
+
+            <div class="flex justify-between items-center bg-white <md:rounded-[12px] rounded-[16px] relative">
+              <a href="#"
+                class="icon basket block <md:w-[30px] <md:h-[30px] w-[40px] h-[40px] flex justify-center items-center <md:p-[7px] p-2.5">
+                <img src="./src/assets/icons/basket.svg" alt="" class="w-full h-full object-cover" />
+              </a>
+              <div
+                class="count absolute -top-[5px] left-[70%] <xl:-top-[10px] <xl:left-[80%] bg-cgreen text-cblue rounded-full py-1 px-1.5 text-[14px]">
+                0
+              </div>
+
+              <div
+                class="bars <xl:block hidden icon w-[30px] h-[30px] flex justify-center items-center p-[9px] -ml-2 cursor-pointer">
+                <img src="./src/assets/icons/bars.svg" alt="" class="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider border-2 mt-[65px] swiper homeSwiper w-full mx-auto mt-0">
+      <div class="swiper-wrapper w-full mx-auto h-[700px] <xl:h-[600px] <lg:h-[500px] <md:h-[400px]">
+        <!-- loop start -->
+        <div class="swiper-slide w-full mx-auto h-full relative">
+          <img src="./src/assets/images/home-slider-1.png" alt="" class="w-full h-full object-cover" />
+
+          <div class="slider-text-block absolute top-0 left-0 w-full h-full flex justify-center items-center px-4 py-5">
+            <div class="w-full max-w-screen-2xl mx-auto h-auto text-center text-cdarkGreen">
+              <p
+                class="title text-[70px] font-bold mb-5 <xl:text-[60px] <lg:text-[50px] <md:text-[42px] <sm:text-[36px]">
+                Lorem ipsum dolor sit amet
+              </p>
+              <p
+                class="description text-[50px] font-bold mb-3 <xl:text-[44px] <lg:text-[38px] <md:text-[30px] <sm:text-[24px] font-medium">
+                Lorem ipsum dolor sit amet
+              </p>
+
+              <div class="btn mx-auto mt-20 w-fit">
+                <a href="#"
+                  class="block <md:px-4 <md:py-2 <md:border-1 px-5 py-3 border-cdarkGreen border-2 w-fit text-[22px] <lg:text-[20px] <md:text-[16px] <sm:text-[14px] font-normal">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- loop end -->
+      </div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <div class="category w-full mx-auto px-4">
+      <div class="caregory-content mx-auto max-w-screen-xl w-full py-10">
+        <p class="title text-center text-[36px] <lg:text-[32px] <md:text-[28px] text-cblack font-light">
+          Где ты собираешься рисовать?
+        </p>
+
+        <div id="categorySwiper" class="swiper mt-10">
+          <div class="swiper-wrapper w-full md:flex-wrap">
+            <!-- loop start -->
+            <div class="swiper-slide md:m-5">
+              <a href="#" class="icon-item h-auto" style="width: fit-content">
+                <div
+                  class="img-block <md:w-[110px] <md:h-[80px] <md:rounded-[12px] w-[130px] h-[100px] rounded-[16px] bg-white flex justify-center items-center p-5"
+                  style="box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04)">
+                  <img src="./src/assets/icons/bedroom.svg" alt="" class="w-full" />
+                </div>
+
+                <p class="title text-center mt-3 text-[16px] <md:text-[14px]">
+                  Спальня
+                </p>
+              </a>
+            </div>
+            <!-- loop end -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-block w-full mx-auto px-4 mt-20">
+      <div class="text-center mx-auto max-w-screen-lg w-full">
+        <p class="title text-cblack text-center text-[30px] <md:text-[26px] font-light" style="line-height: 1.5">
+          Всегда бесплатная доставка на сумму более 1000 шведских крон.Быстрая
+          доставка 1-5 рабочих дней. Обои 6-9 рабочих дней.
+        </p>
+      </div>
+    </div>
+
+    <div class="cards-block w-full mx-auto px-4 my-16">
+      <div class="w-full max-w-screen-2xl mx-auto py-10">
+        <p class="title text-[36px] <lg:text-[32px] <md:text-[28px] text-cblack font-light">
+          Вдохновение, советы и идеи для дома
+        </p>
+
+        <div class="cards-content grid grid-cols-4 <xl:grid-cols-3 <md:grid-cols-2 <sm:grid-cols-1 gap-5 my-10">
+          <!-- loop start -->
+          <div class="card-item overflow-hidden rounded-[16px] <sm:max-w-[350px] <sm:w-full <sm:mx-auto bg-white">
+            <div class="img-block w-full h-[180px]">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/663f/966c/475ee0227d9b86a91984dc07a66bef30?Expires=1702252800&Signature=btYLpWt~b8RSuX0QtxrbgtuJmKOejgrJuNdNlN86jRRSz9hEoRWj405XwIXeQ0qez4MuNIsMskMzV0VnVMv6drsKEzJSLZn6OpYODsOiYTwzsmsCgowOXorJPShOo8PxHOugBUkQC53Vcf0iWgyJQnKQqzN20eagx6v~H5fa6INvFxbnRQ7eNJEzrGhp5Z42M2jmITzAtnjgI2VyMWvusmqWeGpbbRvT2nedpvGdGDoRUqcmKcB2wftY-vcdzN-sQrTiuwnfnHJvK-gaSt4ObjVunOXdzKTT0uRvYykzsb2eb0N-Fr0L7Mb070rrLAVCS9GmhQ~JVMmznG9I-5~ABw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt="" class="w-full h-full object-cover" />
+            </div>
+
+            <div class="text-block bg-white p-5 pb-7 text-cblue">
+              <div class="icon">
+                <img src="./src/assets/icons/arrow.svg" alt="" />
+              </div>
+
+              <p class="title truncate w-full text-[16px] <md:text-[14px] font-semibold my-4">
+                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
+                ipsum dolor sit amet Lorem ipsum dolor sit amet
+              </p>
+
+              <p class="description w-full text-[16px] <md:text-[14px] font-normal max-h-[42px] overflow-hidden"
+                style="line-height: 1.4">
+                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
+                ipsum dolor sit amet Lorem ipsum dolor sit amet
+              </p>
+            </div>
+          </div>
+          <!-- loop end -->
+        </div>
+      </div>
+    </div>
+
+    <div class="color-buckets-content w-full mx-auto px-4 pb-20">
+      <div class="w-full max-w-screen-2xl mx-auto">
+        <p class="title text-cblack text-[30px] <md:text-[26px] font-semibold" style="line-height: 1.5">
+          Подготовьтесь к сезону в помещении с краской Nordic Ecolabeled.
+        </p>
+
+        <div class="colorBucketsSwiper swiper mt-10">
+          <div class="swiper-wrapper w-full">
+            <!-- loop start -->
+            <div class="swiper-slide" style="width: fit-content">
+              <a href="#" class="h-full" style="
+                    width: fit-content;
+                    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+                  ">
+                <div class="content bg-white w-[230px] h-full rounded-[16px] overflow-hidden">
+                  <div class="img-block relative h-[150px] w-full flex justify-center items-center">
+                    <div class="label-1 absolute w-[40px] h-[40px] overflow-hidden p-1 top-3 left-3">
+                      <img src="./src/assets/icons/ecolabel.svg" alt="" />
+                    </div>
+                    <div class="label-2 absolute w-[40px] h-[40px] overflow-hidden p-1 top-14 left-3">
+                      <img src="./src/assets/icons/svanemaerket.svg" alt="" />
+                    </div>
+
+                    <img
+                      src="https://s3-alpha-sig.figma.com/img/b892/4568/794156fec9304a2cbeddfbc98edac489?Expires=1702252800&Signature=YPgf2-49QcIVZhRd5pzsTZy7YAEILQzljCXY3ircd6zqHI2iMpxWJ7Kc3FDWdHirEPxQQbGlqErfWVCxoQWOMH1z71b5Y2ziYz4gPMGVgCu8nNyoDtNGMvE6arb0b8lX8q5y9x~3NzitGk0U3Wmi03PdnzFPKuEQr8yiHOtSN8wn7~OwKXqfxBWJz5XzkwR~Xy13xDGSTFa9cZlmwxvCDHGZBzBoGorBAUZzI~eGzQLC0ASEAvXC3Xt3tXyeH0vkCA8QxKLW9WrEeKNLAvyaaPhdYlzS~-NV50WH4FOUUFQ3qSyDkhEAGMTJY~Mc~XOG1OkQlevO3no8Bhp~yKuhWw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                      alt="" />
+                  </div>
+
+                  <div class="text-block w-full text-center pb-7">
+                    <p class="title text-[14px] text-cblack font-semibold">
+                      Flügger Dekso 1 Ultramatt
+                    </p>
+                    <p class="weight text-[14px] text-cblack font-normal mt-2.5">
+                      от 300 kr
+                    </p>
+                  </div>
+
+                  <div class="description w-full py-4 bg-clightBlue px-3">
+                    <p class="text-center text-[16px] text-cblue truncate w-full font-semibold">
+                      Lorem ipsum dolor sit amet
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- loop end -->
+          </div>
+        </div>
+
+        <div class="more-btn mt-7">
+          <a href="#"
+            class="block px-5 py-3 border-cblack rounded-[16px] border-1 w-fit text-[16px] <md:text-[14px] font-normal text-cblue">
+            Посмотреть больше продукци
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="colors mt-7 w-full mx-auto px-4 pb-20">
+      <div class="w-full max-w-screen-2xl mx-auto">
+        <p class="title text-cblack text-[30px] <md:text-[26px] font-light" style="line-height: 1.5">
+          Цветовые тенденции в доме в 2023 году
+        </p>
+
+        <div class="colorBucketsSwiper swiper mt-10">
+          <div class="swiper-wrapper w-full">
+            <!-- loop start -->
+            <div class="swiper-slide" style="width: fit-content">
+              <a href="#" class="h-full" style="
+                    width: fit-content;
+                    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+                  ">
+                <div class="content bg-white w-[195px] h-full overflow-hidden">
+                  <div class="color-block w-full h-[125px]" style="background-color: #eedfde"></div>
+
+                  <div class="text-block p-4 bg-white">
+                    <p class="color-name text-cblack text-[14px] font-semibold">
+                      Pink Picnic
+                    </p>
+                    <p class="color-id text-cblack text-[14px] font-normal uppercase mt-2">
+                      FL8051
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- loop end -->
+          </div>
+        </div>
+
+        <div class="more-btn mt-7">
+          <a href="#"
+            class="block px-5 py-3 border-cblack rounded-[16px] border-1 w-fit text-[16px] <md:text-[14px] font-normal text-cblue">
+            Популярные цвета
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-block w-full mx-auto px-4 my-20">
+      <div class="mx-auto max-w-screen-2xl w-full">
+        <p class="title text-cblack text-center text-[40px] <md:text-[32px] font-light" style="line-height: 1.5">
+          Найдите свой цвет во Flügger
+        </p>
+
+        <p class="description text-[16px] <md:text-[14px] text-cblack mt-3" style="line-height: 1.5">
+          Представьте себе чувство душевного спокойствия, зная, что ваш
+          следующий проект по рисованию будет легким и беспроблемным. Во
+          Flügger вы можете найти именно тот цвет, который подойдет вашему
+          дому, потому что мы перенесли весь наш опыт и знания из наших
+          магазинов в нашу онлайн-вселенную цветов. На Flügger.se вы найдете
+          все, что вам нужно для вашего домашнего проекта, включая живопись и
+          сопутствующие товары. Вы можете легко заказать краску и доставить ее
+          прямо к вам домой, не заходя в покрасочную мастерскую. Потому что мы
+          доставляем в течение 1–5 рабочих дней, и вы можете найти
+          всевозможные руководства и вдохновение для своего проекта рисования
+          на Flügger.se. Когда вы начинаете свой проект по рисованию, важно,
+          чтобы вы были в безопасности, и именно поэтому мы хотим прозрачности
+          в наших отношениях. Наша цель состоит в том, чтобы вы получили те же
+          знания и советы, которые вы получаете в обычном магазине, только
+          проще и удобнее для вас. Оглянитесь вокруг – исследуйте мир красок!
+        </p>
+      </div>
+    </div>
+
+    <div class="color-buckets-content w-full mx-auto px-4 pb-20">
+      <div class="w-full max-w-screen-2xl mx-auto">
+        <p class="title text-cblack text-[30px] <md:text-[26px] font-semibold" style="line-height: 1.5">
+          Популярная лакокрасочная продукция
+        </p>
+
+        <div class="colorBucketsSwiper swiper mt-10">
+          <div class="swiper-wrapper w-full">
+            <!-- loop start -->
+            <div class="swiper-slide" style="width: fit-content">
+              <a href="#" class="h-full" style="
+                    width: fit-content;
+                    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+                  ">
+                <div class="content bg-white w-[230px] h-full rounded-[16px] overflow-hidden">
+                  <div class="img-block relative h-[150px] w-full flex justify-center items-center">
+                    <div class="label-1 absolute w-[40px] h-[40px] overflow-hidden p-1 top-3 left-3">
+                      <img src="./src/assets/icons/ecolabel.svg" alt="" />
+                    </div>
+                    <div class="label-2 absolute w-[40px] h-[40px] overflow-hidden p-1 top-14 left-3">
+                      <img src="./src/assets/icons/svanemaerket.svg" alt="" />
+                    </div>
+
+                    <img
+                      src="https://s3-alpha-sig.figma.com/img/b892/4568/794156fec9304a2cbeddfbc98edac489?Expires=1702252800&Signature=YPgf2-49QcIVZhRd5pzsTZy7YAEILQzljCXY3ircd6zqHI2iMpxWJ7Kc3FDWdHirEPxQQbGlqErfWVCxoQWOMH1z71b5Y2ziYz4gPMGVgCu8nNyoDtNGMvE6arb0b8lX8q5y9x~3NzitGk0U3Wmi03PdnzFPKuEQr8yiHOtSN8wn7~OwKXqfxBWJz5XzkwR~Xy13xDGSTFa9cZlmwxvCDHGZBzBoGorBAUZzI~eGzQLC0ASEAvXC3Xt3tXyeH0vkCA8QxKLW9WrEeKNLAvyaaPhdYlzS~-NV50WH4FOUUFQ3qSyDkhEAGMTJY~Mc~XOG1OkQlevO3no8Bhp~yKuhWw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                      alt="" />
+                  </div>
+
+                  <div class="text-block w-full text-center pb-7 px-4">
+                    <p class="title text-[14px] text-cblack font-semibold truncate  pb-0.5">
+                      Flügger Dekso 1 Ultramatt
+                    </p>
+                    <p class="weight text-[14px] text-cblack font-normal mt-2.5">
+                      от 300 kr
+                    </p>
+                  </div>
+
+                  <div class="description w-full py-4 bg-clightBlue px-3">
+                    <p class="text-center text-[16px] text-cblue truncate w-full font-semibold">
+                      Lorem ipsum dolor sit amet
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- loop end -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full mx-auto px-4 my-20">
+      <div class="mx-auto max-w-screen-2xl w-full">
+        <p class="title text-cblack text-center text-[40px] <md:text-[32px] font-light" style="line-height: 1.5">
+          Выбор художников на протяжении десятилетий
+        </p>
+
+        <div class="home-contents w-full mt-20">
+          <!-- loop start -->
+          <div class="content-item md:flex justify-between items-start flex-wrap mb-10 md:mb-20">
+            <div class="text-block w-full md:w-1/2 md:pr-16">
+              <p class="title text-cblack text-[30px] <md:text-[26px] font-light" style="line-height: 1.5">
+                О Флугре 1
+              </p>
+
+              <p class="description text-[18px] <md:text-[16px] text-cblack mt-3 font-normal md:max-h-[380px] overflow-hidden"
+                style="line-height: 1.5">
+                Представьте себе чувство душевного спокойствия, зная, что ваш
+                следующий проект по рисованию будет легким и беспроблемным. Во
+                Flügger вы можете найти именно тот цвет, который подойдет
+                вашему дому, потому что мы перенесли весь наш опыт и знания из
+                наших магазинов в нашу онлайн-вселенную цветов. На Flügger.se
+                вы найдете все, что вам нужно для вашего домашнего проекта,
+                включая живопись и сопутствующие товары. Вы можете легко
+                заказать краску и доставить ее прямо к вам домой, не заходя в
+                покрасочную мастерскую. Потому что мы доставляем в течение 1–5
+                рабочих дней, и вы можете найти всевозможные руководства и
+                вдохновение для своего проекта рисования на Flügger.se. Когда
+                вы начинаете свой проект по рисованию, важно, чтобы вы были в
+                безопасности, и именно поэтому мы хотим прозрачности в наших
+                отношениях. Наша цель состоит в том, чтобы вы получили те же
+                знания и советы, которые вы получаете в обычном магазине,
+                только проще и удобнее для вас. Оглянитесь вокруг – исследуйте
+                мир красок!
+              </p>
+
+              <div class="more-btn mt-5">
+                <a href="#"
+                  class="block px-5 py-3 border-cblue bg-cblue rounded-[16px] border-1 w-fit text-[16px] <md:text-[14px] font-normal text-white">
+                  Подробнее
+                </a>
+              </div>
+            </div>
+
+            <div class="img-block w-full md:w-1/2 <sm:h-[400px] h-[550px] <md:mt-10">
+              <img class="w-full h-full <md:object-cover md:object-scale-down"
+                src="https://s3-alpha-sig.figma.com/img/66e8/0800/c80a9b434de43abc102bf32a12ea0ca4?Expires=1702252800&Signature=hvGLSrboOtc8z7yMTotacLyfWHwp7q-XOsDsnnWM-BI~Vl4y~bROdPeHxmEZU0E4eDoKCzYMDdNQjCcgIGTE~fZpR8B3LFMwLTfdgA5cQNYDJFMFx8caMQ435QmLSqoC5qWmO-jyxr-jAHnLSdbXK2bOSK1~rNXESeviudErNbwCbaR6t6jBDpD~vUTpeyFMiEks98X1bqHLLnMbeCfquvF~RvYokbS~YytZ8DH4eYyNvW3pAYlu9TbdFVilf-3CDUqrQMT8TjNNeUlcrJC-FX66xgXsFVxy00y54s~9lZBohYy3-iahw6XjeUZnHWVFdhlQyYz5dHhBfrfcrNsTTA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt="" />
+            </div>
+          </div>
+          <!-- loop end -->
+        </div>
+      </div>
+    </div>
+
+    <div class="footer w-full mt-auto bg-cblue py-16 px-4 text-white">
+      <div class="footer-center max-w-screen-2xl mx-auto grid grid-cols-4 <lg:grid-cols-1 lg:mt-16">
+        <div class="lg:-mt-[80px] col h-full logo lg:pr-10 <lg:order-4 <lg:mt-10">
+          <div class="w-fit <lg:mx-auto">
+            <div class="logo">
+              <a href="#">
+                <img src="./src/assets/icons/logo.svg" class="logo w-[190px]" alt="" />
+              </a>
+            </div>
+
+            <div class="text mt-10">
+              <p class="text-[14px] font-semibold mb-4">Флюггер Швеция AB</p>
+              <p class="text-[14px] font-medium mb-4">Халласлеттсвэген 10</p>
+              <p class="text-[14px] font-medium mb-4">517 81 Боллебигд</p>
+              <p class="text-[14px] font-medium mb-4">Copyright @ 2023</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer col-1 -->
+        <div
+          class="col h-full footer-dropdown lg:px-5 lg:border-l <lg:border-t <lg:border-b lg:border-r border-[#415186]">
+          <div onclick="toggleFooterDropdown('footer-dropdown-block-1')"
+            class="footer-dropdown-toggler <lg:cursor-pointer <lg:py-4 title text-[14px] font-normal lg:mb-4 text-clightBlue flex justify-between items-center"
+            style="line-height: 1.5">
+            <div class="text w-fit">Цвета, вдохновение и сделай сам</div>
+
+            <div class="icon w-fit ml-5 lg:hidden">
+              <img src="./src/assets/icons/arrowLight.svg" alt="" class="" />
+            </div>
+          </div>
+
+          <div class="footer-dropdown-block-1 w-full mb-4 <lg:hidden">
+            <!-- loop start -->
+            <div class="w-full mb-2">
+              <a href="#" class="text-[14px] font-normal text-white" style="line-height: 1.5">
+                Цвета
+              </a>
+            </div>
+            <!-- loop end -->
+          </div>
+        </div>
+
+        <!-- footer col-3 -->
+        <div class="col h-full footer-dropdown lg:px-5 lg:border-r border-[#415186]">
+          <div onclick="toggleFooterDropdown('footer-dropdown-block-2')"
+            class="footer-dropdown-toggler <lg:cursor-pointer <lg:py-4 title text-[14px] font-normal lg:mb-4 text-clightBlue flex justify-between items-center"
+            style="line-height: 1.5">
+            <div class="text w-fit">Цвета, вдохновение и сделай сам</div>
+
+            <div class="icon w-fit ml-5 lg:hidden">
+              <img src="./src/assets/icons/arrowLight.svg" alt="" class="" />
+            </div>
+          </div>
+
+          <div class="footer-dropdown-block-2 w-full mb-4 <lg:hidden">
+            <!-- loop start -->
+            <div class="w-full mb-2">
+              <a href="#" class="text-[14px] font-normal text-white" style="line-height: 1.5">
+                Цвета
+              </a>
+            </div>
+            <!-- loop end -->
+          </div>
+        </div>
+
+        <!-- footer col-4 -->
+        <div class="col h-full footer-dropdown lg:px-5 <lg:border-t <lg:border-b border-[#415186]">
+          <div onclick="toggleFooterDropdown('footer-dropdown-block-3')"
+            class="footer-dropdown-toggler <lg:cursor-pointer <lg:py-4 title text-[14px] font-normal lg:mb-4 text-clightBlue flex justify-between items-center"
+            style="line-height: 1.5">
+            <div class="text w-fit">Цвета, вдохновение и сделай сам</div>
+
+            <div class="icon w-fit ml-5 lg:hidden">
+              <img src="./src/assets/icons/arrowLight.svg" alt="" class="" />
+            </div>
+          </div>
+
+          <div class="footer-dropdown-block-3 w-full mb-4 <lg:hidden">
+            <!-- loop start -->
+            <div class="w-full mb-2">
+              <a href="#" class="text-[14px] font-normal text-white" style="line-height: 1.5">
+                Цвета
+              </a>
+            </div>
+            <!-- loop end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="./src/js/swiper.js"></script>
+  <script src="./src/js/app.js"></script>
+</body>
+
+</html>

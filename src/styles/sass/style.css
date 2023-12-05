@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&display=swap");
+body {
+  font-family: "Nunito Sans", sans-serif !important;
+  color: #363433;
+}
+
+.links .link-item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.links .link-item a {
+  display: block;
+  padding: 20px 0;
+}
+.links .link-item a::before,
+.links .link-item span::before {
+  transition: all 0.2s linear;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.links .link-item:hover a::before,
+.links .link-item:hover span::before {
+  width: 100%;
+}
+.links .link-item .dropdown {
+  display: block;
+  z-index: 2;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  background: #122568;
+}
+.links .link-item .dropdown .category-item:hover .link p::before {
+  width: 100%;
+}
+.links .link-item .dropdown .category-item .link p {
+  position: relative;
+  padding: 8px 0;
+}
+.links .link-item .dropdown .category-item .link p::before {
+  transition: all 0.2s linear;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.links .link-item .dropdown .category-item .link p.active::before {
+  width: 100%;
+}
+
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  max-width: 1536px;
+  width: 95%;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  bottom: 50px !important;
+  background-color: rgba(134, 133, 133, 0.8196078431);
+}
+.swiper-scrollbar.swiper-scrollbar-horizontal .swiper-scrollbar-drag {
+  background-color: white;
+}
+
+#categorySwiper .swiper-wrapper {
+  justify-content: center;
+}
+#categorySwiper .swiper-wrapper .swiper-slide {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+#categorySwiper.categorySwiper .swiper-wrapper {
+  justify-content: start;
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.h-fit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.home-contents .content-item:nth-of-type(odd) .text-block {
+  order: 2;
+  padding-right: 0 !important;
+  padding-left: 64px !important;
+}
+.home-contents .content-item:nth-of-type(odd) .img-block {
+  padding: 0 !important;
+  order: 1;
+}
+.home-contents .content-item:nth-of-type(odd) .img-block img {
+  margin: 0 !important;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+@media (max-width: 768px) {
+  .home-contents .content-item:nth-of-type(odd) .text-block {
+    padding-left: 0px !important;
+  }
+  .home-contents .content-item .text-block {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+}
+.custom-select {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  width: 100%;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border: 1px solid #363433;
+  border-top: none;
+  padding: 0 20px !important;
+  max-height: 315px !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.select-items div {
+  border-top: 1px solid #d7d6d6;
+  padding: 10px 0;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-selected {
+  border: 1px solid #363433;
+  border-radius: 16px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+}
+.select-selected::before, .select-selected::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #363433;
+}
+.select-selected:after {
+  transform: rotate(-45deg);
+  left: calc(100% - 32px);
+}
+.select-selected:before {
+  transform: rotate(45deg);
+  left: calc(100% - 38px);
+}
+.select-selected.select-arrow-active {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom: none !important;
+}
+.select-selected.select-arrow-active::before {
+  transform: rotate(-45deg);
+}
+.select-selected.select-arrow-active::after {
+  transform: rotate(45deg);
+}
+
+.radio-group label {
+  cursor: pointer;
+}
+.radio-group.paint input[type=radio]:checked + label {
+  background-color: #122568;
+  color: white;
+}
+.radio-group.litr input[type=radio]:checked + label {
+  border-color: #122568;
+}
+.radio-group.swiper input[type=radio]:checked + label .description {
+  background-color: #122568;
+  position: relative;
+}
+.radio-group.swiper input[type=radio]:checked + label .description .non-selected {
+  display: none;
+}
+.radio-group.swiper input[type=radio]:checked + label .description .selected-text {
+  display: block;
+  color: white;
+}
+.radio-group.swiper input[type=radio]:checked + label .description::before, .radio-group.swiper input[type=radio]:checked + label .description::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+}
+.radio-group.swiper input[type=radio]:checked + label .description:before {
+  width: 15px;
+  transform: rotate(-45deg);
+  left: calc(100% - 38px);
+}
+.radio-group.swiper input[type=radio]:checked + label .description:after {
+  width: 8px;
+  transform: rotate(45deg);
+  left: calc(100% - 42px);
+  top: 55%;
+}
+.radio-group.color input[type=radio]:checked + label .content {
+  position: relative;
+}
+.radio-group.color input[type=radio]:checked + label .content::before, .radio-group.color input[type=radio]:checked + label .content::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+}
+.radio-group.color input[type=radio]:checked + label .content:before {
+  width: 15px;
+  transform: rotate(-45deg);
+  left: calc(50% - 6px);
+}
+.radio-group.color input[type=radio]:checked + label .content:after {
+  width: 8px;
+  transform: rotate(45deg);
+  left: calc(50% - 10px);
+  top: 55%;
+}
+
+.quantity-block input[type=number]::-webkit-inner-spin-button,
+.quantity-block input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.quantity-block input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.inspirationSwiper .swiper-scrollbar.swiper-scrollbar-horizontal {
+  width: 100%;
+  background-color: #c3c2c2;
+}
+.inspirationSwiper .swiper-scrollbar.swiper-scrollbar-horizontal .swiper-scrollbar-drag {
+  background-color: #363433;
+}/*# sourceMappingURL=style.css.map */
