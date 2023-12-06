@@ -39,7 +39,6 @@ body {
     }
 
     .dropdown {
-      display: block;
       z-index: 2;
       left: 0;
       position: fixed;
@@ -71,6 +70,37 @@ body {
 
           &.active {
             &::before {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .links-block {
+        .links-block-item,
+        .links-block-item a {
+          &::before {
+            display: none !important;
+          }
+          span {
+            position: relative;
+          }
+
+          span::before {
+            transition: all 0.2s linear;
+            position: absolute;
+            display: block;
+            content: "";
+            width: 0%;
+            height: 2px;
+            background-color: white;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          &:hover {
+            span::before {
               width: 100%;
             }
           }
@@ -135,20 +165,6 @@ body {
         height: 100%;
         object-fit: cover !important;
       }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .home-contents .content-item {
-    &:nth-of-type(odd) {
-      .text-block {
-        padding-left: 0px !important;
-      }
-    }
-    .text-block {
-      padding-right: 0px !important;
-      padding-left: 0px !important;
     }
   }
 }
@@ -359,5 +375,53 @@ body {
     .swiper-scrollbar-drag {
       background-color: #363433;
     }
+  }
+}
+
+.inspiration {
+  .home-contents .content-item {
+    padding: 70px 1rem;
+    &:nth-of-type(odd) {
+      background-color: white !important;
+      .text-block {
+        order: 2;
+
+        padding-right: 0 !important;
+        padding-left: 64px !important;
+      }
+
+      .img-block {
+        padding: 0 !important;
+        order: 1;
+
+        img {
+          margin: 0 !important;
+          width: 100%;
+          height: 100%;
+          object-fit: cover !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .inspiration .home-contents .content-item,
+  .home-contents .content-item {
+    &:nth-of-type(odd) {
+      .text-block {
+        padding-left: 0px !important;
+      }
+    }
+    .text-block {
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+    }
+  }
+}
+
+.cookie-option {
+  input[type="checkbox"]:checked + div::after {
+    transform: translateX(115%);
   }
 }

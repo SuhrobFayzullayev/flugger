@@ -19,6 +19,13 @@ new Swiper(".colorBucketsSwiper", {
   spaceBetween: 30,
 });
 
+new Swiper(".buttonSwiper", {
+  freeMode: true,
+  grabCursor: true,
+  slidesPerView: "auto",
+  spaceBetween: 10,
+});
+
 // Home Swiper
 new Swiper(".inspirationSwiper", {
   freeMode: true,

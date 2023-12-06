@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./src/styles/windi/windi.css" />
+  <link rel="stylesheet" href="./src/styles/sass/style.css" />
+  <title>Document | bathroom</title>
+</head>
+
+<body>
+  <div class="w-full mx-auto bg-clight flex min-h-screen flex-col">
+    <div class="w-full mx-auto mt-[65px] ">
+      <div class="text-block w-full mx-auto px-4 my-16">
+        <div class="mx-auto max-w-screen-xl w-full">
+          <p class="title text-center text-cblack text-[40px] <md:text-[32px] font-light" style="line-height: 1.5">
+            Какую комнату покрасить?
+          </p>
+
+          <p class="description text-center text-[16px] <md:text-[14px] text-cblack mt-3 font-normal"
+            style="line-height: 1.5">
+            Здесь вы можете найти советы и рекомендации для комнаты, которую собираетесь красить.
+          </p>
+        </div>
+      </div>
+
+      <div class="category w-full mx-auto px-4">
+        <div class="caregory-content mx-auto max-w-screen-xl w-full">
+          <div id="categorySwiper" class="swiper mt-10">
+            <div class="swiper-wrapper w-full md:flex-wrap">
+              <!-- loop start -->
+              <div class="swiper-slide md:m-5">
+                <a href="#" class="icon-item h-auto" style="width: fit-content">
+                  <div
+                    class="img-block <md:w-[110px] <md:h-[80px] <md:rounded-[12px] w-[130px] h-[100px] rounded-[16px] bg-white flex justify-center items-center p-5"
+                    style="box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04)">
+                    <img src="./src/assets/icons/bedroom.svg" alt="" class="w-full" />
+                  </div>
+
+                  <p class="title text-center mt-3 text-[16px] <md:text-[14px]">
+                    Спальня
+                  </p>
+                </a>
+              </div>
+              <!-- loop end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="./src/js/swiper.js"></script>
+  <script src="./src/js/app.js"></script>
+</body>
+
+</html>

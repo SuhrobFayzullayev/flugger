@@ -33,7 +33,6 @@ body {
   width: 100%;
 }
 .links .link-item .dropdown {
-  display: block;
   z-index: 2;
   left: 0;
   position: fixed;
@@ -60,6 +59,31 @@ body {
   transform: translateX(-50%);
 }
 .links .link-item .dropdown .category-item .link p.active::before {
+  width: 100%;
+}
+.links .link-item .dropdown .links-block .links-block-item::before,
+.links .link-item .dropdown .links-block .links-block-item a::before {
+  display: none !important;
+}
+.links .link-item .dropdown .links-block .links-block-item span,
+.links .link-item .dropdown .links-block .links-block-item a span {
+  position: relative;
+}
+.links .link-item .dropdown .links-block .links-block-item span::before,
+.links .link-item .dropdown .links-block .links-block-item a span::before {
+  transition: all 0.2s linear;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.links .link-item .dropdown .links-block .links-block-item:hover span::before,
+.links .link-item .dropdown .links-block .links-block-item a:hover span::before {
   width: 100%;
 }
 
@@ -116,15 +140,6 @@ body {
      object-fit: cover !important;
 }
 
-@media (max-width: 768px) {
-  .home-contents .content-item:nth-of-type(odd) .text-block {
-    padding-left: 0px !important;
-  }
-  .home-contents .content-item .text-block {
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-  }
-}
 .custom-select {
   position: relative;
   width: 100%;
@@ -299,4 +314,42 @@ body {
 }
 .inspirationSwiper .swiper-scrollbar.swiper-scrollbar-horizontal .swiper-scrollbar-drag {
   background-color: #363433;
+}
+
+.inspiration .home-contents .content-item {
+  padding: 70px 1rem;
+}
+.inspiration .home-contents .content-item:nth-of-type(odd) {
+  background-color: white !important;
+}
+.inspiration .home-contents .content-item:nth-of-type(odd) .text-block {
+  order: 2;
+  padding-right: 0 !important;
+  padding-left: 64px !important;
+}
+.inspiration .home-contents .content-item:nth-of-type(odd) .img-block {
+  padding: 0 !important;
+  order: 1;
+}
+.inspiration .home-contents .content-item:nth-of-type(odd) .img-block img {
+  margin: 0 !important;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+@media (max-width: 768px) {
+  .inspiration .home-contents .content-item:nth-of-type(odd) .text-block,
+.home-contents .content-item:nth-of-type(odd) .text-block {
+    padding-left: 0px !important;
+  }
+  .inspiration .home-contents .content-item .text-block,
+.home-contents .content-item .text-block {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+}
+.cookie-option input[type=checkbox]:checked + div::after {
+  transform: translateX(115%);
 }/*# sourceMappingURL=style.css.map */

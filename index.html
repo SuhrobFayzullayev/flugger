@@ -25,10 +25,15 @@
             <div class="link-item">
               <span class="py-[20px]">Где ты собираешься рисовать?</span>
 
-              <div class="dropdown cursor-default px-6 -ml-2">
+              <div class="dropdown hidden cursor-default px-6 -ml-2">
                 <div class="w-full mx-auto max-w-screen-2xl my-14 flex">
                   <div class="w-1/4 h-full border-r border-clightBlue pr-[30px]">
-                    <div class="category-item mb-5 w-full flex justify-between items-center cursor-pointer">
+                    <!-- link => link => links -->
+                    <!-- loop start -->
+                    <!-- unique class "category-item-dropdown-2 <==> hidden-dropdown-item-1" -->
+                    <div
+                      class="category-item category-item-dropdown link-1-category-item-dropdown-1  mb-5 w-full flex justify-between items-center cursor-pointer"
+                      onclick="toggleHeaderDropdown('link-1-hidden-dropdown-item-1', 'link-1-category-item-dropdown-1')">
                       <div class="link w-[calc(100%-50px)] overflow-hidden">
                         <p class="text-[18px] active text-white w-fit text-left" style="line-height: 1.5;">
                           Link
@@ -41,7 +46,26 @@
                       </div>
                     </div>
 
-                    <!-- one-child -->
+                    <!-- unique class "category-item-dropdown-2 <==> hidden-dropdown-item-2" -->
+                    <div
+                      class="category-item category-item-dropdown link-1-category-item-dropdown-2 mb-5 w-full flex justify-between items-center cursor-pointer"
+                      onclick="toggleHeaderDropdown('link-1-hidden-dropdown-item-2', 'link-1-category-item-dropdown-2')">
+                      <div class="link w-[calc(100%-50px)] overflow-hidden">
+                        <p class="text-[18px] text-white w-fit text-left" style="line-height: 1.5;">
+                          Link2
+                        </p>
+                      </div>
+
+                      <div class="icon w-[15px] h-[15px] flex justify-center items-end"
+                        style="transform: rotateZ(-90deg);">
+                        <img src="./src/assets/icons/arrowLight.svg" class="w-full h-full">
+                      </div>
+                    </div>
+                    <!-- loop end -->
+
+                    <!-- link => link -->
+                    <!-- loop start -->
+                    <!-- item-1 -->
                     <a href="#" class="category-item mb-5 w-full" style="padding: 0;">
                       <div class="w-full flex justify-between items-center">
                         <div class="link w-[calc(100%-50px)] overflow-hidden">
@@ -56,6 +80,8 @@
                         </div>
                       </div>
                     </a>
+
+                    <!-- item-2 -->
                     <a href="#" class="category-item mb-5 w-full" style="padding: 0;">
                       <div class="w-full flex justify-between items-center">
                         <div class="link w-[calc(100%-50px)] overflow-hidden">
@@ -70,22 +96,171 @@
                         </div>
                       </div>
                     </a>
+                    <!-- loop end -->
+                  </div>
+
+                  <div class="w-3/4 px-32 dropdown-content">
+                    <!-- unique class "category-item-dropdown-2 <==> hidden-dropdown-item-1" -->
+                    <div class="hidden-dropdown-item link-1-hidden-dropdown-item-1">
+                      <a href="#" class="w-fit h-fit text-[40px] p-0 font-normal" style="padding: 0;">Rum</a>
+
+                      <div class="links-block gap-5 grid grid-cols-4 mt-5">
+                        <div class="links-block-item py-2">
+                          <a href="#" class="text-[22px] break-words text-left font-light"
+                            style="padding: 0; line-height: 1.5;">
+                            <span>link</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- unique class "category-item-dropdown-2 <==> hidden-dropdown-item-2" -->
+                    <div class="hidden hidden-dropdown-item link-1-hidden-dropdown-item-2">
+                      <a href="#" class="w-fit h-fit text-[40px] p-0 font-normal" style="padding: 0;">Rum 2</a>
+
+                      <div class="links-block gap-5 grid grid-cols-4 mt-5">
+                        <div class="links-block-item py-2">
+                          <a href="#" class="text-[22px] break-words text-left font-light"
+                            style="padding: 0; line-height: 1.5;">
+                            <span>link</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="link-item mx-3">
-              <a href="#">Цвета</a>
+              <span class="py-[20px]">Цвета</span>
+
+              <div class="dropdown hidden cursor-default px-6 -ml-2">
+                <div class="w-full mx-auto max-w-screen-2xl my-14 flex">
+                  <div class="w-1/4 h-full border-r border-clightBlue pr-[30px]">
+
+                    <!-- link => link -->
+                    <!-- loop start -->
+                    <!-- item-1 -->
+                    <a href="#" class="category-item mb-5 w-full" style="padding: 0;">
+                      <div class="w-full flex justify-between items-center">
+                        <div class="link w-[calc(100%-50px)] overflow-hidden">
+                          <p class="text-[18px] text-white w-fit text-left" style="line-height: 1.5;">
+                            Link
+                          </p>
+                        </div>
+
+                        <div class="icon w-[15px] h-[15px] flex justify-center items-end"
+                          style="transform: rotateZ(-90deg);">
+                          <img src="./src/assets/icons/arrowLight.svg" class="w-full h-full">
+                        </div>
+                      </div>
+                    </a>
+
+                    <!-- item-2 -->
+                    <a href="#" class="category-item mb-5 w-full" style="padding: 0;">
+                      <div class="w-full flex justify-between items-center">
+                        <div class="link w-[calc(100%-50px)] overflow-hidden">
+                          <p class="text-[18px] text-white w-fit text-left" style="line-height: 1.5;">
+                            Link
+                          </p>
+                        </div>
+
+                        <div class="icon w-[15px] h-[15px] flex justify-center items-end"
+                          style="transform: rotateZ(-90deg);">
+                          <img src="./src/assets/icons/arrowLight.svg" class="w-full h-full">
+                        </div>
+                      </div>
+                    </a>
+                    <!-- loop end -->
+                  </div>
+                </div>
+              </div>
             </div>
+
             <div class="link-item mx-3">
-              <a href="#">Краска, шпаклевка и обои</a>
+              <span class="py-[20px]">Краска, шпаклевка и обои</span>
+
+              <div class="dropdown hidden cursor-default px-6 -ml-2">
+                <div class="w-full mx-auto max-w-screen-2xl my-14 flex">
+                  <div class="w-1/4 h-full border-r border-clightBlue pr-[30px]">
+                    <!-- link => link => links -->
+                    <!-- loop start -->
+                    <!-- unique class "category-item-dropdown-2 <==> hidden-dropdown-item-1" -->
+                    <div
+                      class="category-item category-item-dropdown link-2-category-item-dropdown-1  mb-5 w-full flex justify-between items-center cursor-pointer"
+                      onclick="toggleHeaderDropdown('link-2-hidden-dropdown-item-1', 'link-2-category-item-dropdown-1')">
+                      <div class="link w-[calc(100%-50px)] overflow-hidden">
+                        <p class="text-[18px] active text-white w-fit text-left" style="line-height: 1.5;">
+                          Link
+                        </p>
+                      </div>
+
+                      <div class="icon w-[15px] h-[15px] flex justify-center items-end"
+                        style="transform: rotateZ(-90deg);">
+                        <img src="./src/assets/icons/arrowLight.svg" class="w-full h-full">
+                      </div>
+                    </div>
+
+                    <!-- unique class "category-item-dropdown-2 <==> hidden-dropdown-item-2" -->
+                    <div
+                      class="category-item category-item-dropdown link-2-category-item-dropdown-2 mb-5 w-full flex justify-between items-center cursor-pointer"
+                      onclick="toggleHeaderDropdown('link-2-hidden-dropdown-item-2', 'link-2-category-item-dropdown-2')">
+                      <div class="link w-[calc(100%-50px)] overflow-hidden">
+                        <p class="text-[18px] text-white w-fit text-left" style="line-height: 1.5;">
+                          Link2
+                        </p>
+                      </div>
+
+                      <div class="icon w-[15px] h-[15px] flex justify-center items-end"
+                        style="transform: rotateZ(-90deg);">
+                        <img src="./src/assets/icons/arrowLight.svg" class="w-full h-full">
+                      </div>
+                    </div>
+                    <!-- loop end -->
+                  </div>
+
+                  <div class="w-3/4 px-32 dropdown-content">
+                    <!-- unique class "category-item-dropdown-2 <==> hidden-dropdown-item-1" -->
+                    <div class=" hidden-dropdown-item link-2-hidden-dropdown-item-1">
+                      <a href="#" class="w-fit h-fit text-[40px] p-0 font-normal" style="padding: 0;">Rum3</a>
+
+                      <div class="links-block gap-5 grid grid-cols-4 mt-5">
+                        <div class="links-block-item py-2">
+                          <a href="#" class="text-[22px] break-words text-left font-light"
+                            style="padding: 0; line-height: 1.5;">
+                            <span>link</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- unique class "category-item-dropdown-2 <==> hidden-dropdown-item-2" -->
+                    <div class="hidden hidden-dropdown-item link-2-hidden-dropdown-item-2">
+                      <a href="#" class="w-fit h-fit text-[40px] p-0 font-normal" style="padding: 0;">Rum 4</a>
+
+                      <div class="links-block gap-5 grid grid-cols-4 mt-5">
+                        <div class="links-block-item py-2">
+                          <a href="#" class="text-[22px] break-words text-left font-light"
+                            style="padding: 0; line-height: 1.5;">
+                            <span>link</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
             <div class="link-item mx-3">
               <a href="#">Аксессуары</a>
             </div>
+
             <div class="link-item mx-3">
               <a href="#">Вдохновение и руководства</a>
             </div>
+
             <div class="link-item">
               <a href="#">Контакт</a>
             </div>

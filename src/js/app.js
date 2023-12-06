@@ -101,6 +101,36 @@ const linkItems = document.querySelectorAll(".link-item");
 linkItems.forEach((link) => {
   link.addEventListener("mouseover", () => {
     const currentDropdown = link.querySelector(".dropdown");
-    if (currentDropdown) currentDropdown.style.top = `${link.offsetHeight}px`;
+    if (currentDropdown) {
+      currentDropdown.classList.remove("hidden");
+      currentDropdown.style.top = `${link.offsetHeight}px`;
+    }
+  });
+
+  link.addEventListener("mouseout", () => {
+    const currentDropdown = link.querySelector(".dropdown");
+    if (currentDropdown) {
+      if (!currentDropdown.classList.contains("hidden"))
+        currentDropdown.classList.add("hidden");
+    }
   });
 });
+
+function toggleHeaderDropdown(dropdownClass, activeClass) {
+  document.querySelectorAll(".category-item-dropdown").forEach((element) => {
+    if (element.querySelector("p").classList.contains("active")) {
+      element.querySelector("p").classList.remove("active");
+    }
+  });
+  document
+    .querySelector(`.${activeClass}`)
+    .querySelector("p")
+    .classList.add("active");
+
+  document.querySelectorAll(".hidden-dropdown-item").forEach((element) => {
+    if (!element.classList.contains("hidden")) {
+      element.classList.add("hidden");
+    }
+  });
+  document.querySelector(`.${dropdownClass}`).classList.remove("hidden");
+}
